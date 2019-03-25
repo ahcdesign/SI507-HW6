@@ -56,14 +56,10 @@ Below are a bunch of questions and indications of things to do. For each indicat
 	* Slightly more than half the 1000 points will come from answering the questions. The rest will come from your edits to the code.
 
 ### Names of people you have worked with on this assignment
-* List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+
+* **Angela Chih (ahchih)**
+* Corbet Griffith (corbet)
+* Sansitha Nandakumar (sansitha)
 
 ## Questions & code instructions
 
@@ -71,35 +67,77 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * **This is just an example question.**
 
-This is what an example answer should look like. If you want to include some code, which you probably don't have to do, you can, like this:
+This is what an example answer should look like. If you want to include some code, 
+which you probably don't have to do, you can, like this:
 
 ```js
 Some JavaScript code
 ```
 
-* **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
+* **What does a code comment look like in JavaScript? What character/s do you have to put 
+before a comment?**
 
-* **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+The characters you put before a comment and the code that looks like in JavaScript is 
+```//<place comment here>``` 
 
-* **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+* **Explain what needs to happen to get a JavaScript program to "run", given the 
+JavaScript you've seen in this assignment.**
 
-* **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+You place the ```<script type="text/javascript"><\script>``` in order to have the
+JavaScript to run. 
 
-* **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
+* **What functions in JavaScript seem to be similar in function to the `print` function in
+Python? (There are two.) Why might you use one and not the other? Explain briefly.**
+
+The functions in JavaScript that are similar to the 'print' function in Python are: 
+```console.log();``` and ```alert();``` 
+
+* **What code would have to comment out to get rid of the pop-up box when you load the 
+page? (Related to the last question.) Do that in the code file, and then, add code so 
+that a text box will appear that contains the current date and time! *HINT:* Look through 
+the rest of the code first...**
+
+Commenting out line 12 of ```alert("hello");``` on line 12 gets rid of the pop-up box. 
+To display the current date and time on the alert function you would include on 12 the 
+new Date function as ```alert(new Date());```. 
+
+* **How can you put your own name at the top where it currently says "A name"? Explain 
+very briefly how to do so, and replace `A name` in the web page with your own name.**
+
+From line 16 in the script section ```document.querySelector('h1').innerHTML = "A name";```
+replacing the 'A name' to my name as 'Angela Chih'. 
 
 * **What does the word `document` represent in this code? Explain briefly.**
+
+It represents the HTML file and allows the code to be referenced over the elements within the file.
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-* **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+This line identified is counting the length of li items using the querySelector method and
+then displaying the information on the page using the HTML code on line 61.
 
-* **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+* **What color would the background of this page be <u>if there were no JavaScript in this 
+page</u>?**
 
-* **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+The background would be white because there is no color assigned within the style (CSS) section or the HTML. 
 
-* **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
+* **Why are there a couple of gray boxes on the screen with a different colored border? 
+How could you edit this code to make them a different color? Explain briefly. Then edit 
+the code to make those boxes some shade of blue, of your choosing.**
+
+There are two gray boxes on the screen with a white colored border because it represents the 
+paragraph sections on the page. You can edit this code to make them a different color in the style (CSS) section on line 41 and 42. 
+
+* **Edit the code so that, if you highlight `McGill University` and copy it, you see the 
+text `O Canada` near the bottom of the page. Briefly explain why you made the edits that 
+you did -- how did you know/figure out what to do?**
+
+I duplicated the script section of the copyFunction() from the Michigan one and changed it to copyFunction2() and edited the 'Go Blue!' to 'O Canada'. Then I changed the 'oncopy' in the HTML section of line 75 as 'onclick' in order for the code to work and then pasted the code to line 73. 
+
+* **In the original code, when you click the button that says `Wow`, you see a text box! 
+Wow. Explain briefly in your own words why the following code causes that to happen:**
 
 ```js
 function handleClick(){
@@ -112,11 +150,15 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
+In the HTML code it created a button that has the word "Wow" and once it has been clicked by the user because of the onclick variable refers to the script function of 'handleClick()' it becomes an alert box that says "hello". 
 
+* **Knowing what you learned from the previous question, add code/markup to the 
+`jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` 
+on it somewhere on the page, and when that button is clicked, a text box containing the 
+text `March 20, 2019` appears. (There's no function -- that I am aware of -- to 
+automatically get this info, you've got to type it yourself.)**
 
-* **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
-
-
+I have coded on line 82. 
 
 ### The next few questions address the `jquerylib_submit_example.html` file.
 
@@ -124,11 +166,19 @@ function handleClick(){
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+The error is in red because the input was followed per the instructions of submitting one word only and when the user inputs one word the response becomes blue. The colors are in the style (CSS) section of the HTML code. 
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+A variable called "regex" to test the input and make sure that is it one word with characters and no numbers. I googled the coded line `var regex = /^[a-zA-Z]+$/;` to double check if my presumptions were correct. From this link 'https://stackoverflow.com/questions/3532053/regular-expression-for-only-characters-a-z-a-z' I learned it means regular expression for characters only and the '+' before the '$' sign instructs the computer to not accept empty matches. 
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+The difference in the syntax of conditional statements in JavaScript to Python is the functions created and connected to override the HTML section of the code in order for it work. Instead of function and return in Python, JavaScript has different variable names. The similarities is they share the if and else statement. 
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+`1000` in the `.fadeOut(10000)` refers to how long in seconds the result of 'invalid' or 'valid' appears and then disappears from the page. 
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -137,6 +187,9 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 
+The following code "$" at the beginning of the program represents the page being manipulated safely until the document is "ready" and the JQuery detects the state of readiness. 
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
+
+I have coded on line 27-29.
