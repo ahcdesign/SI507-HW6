@@ -128,7 +128,7 @@ How could you edit this code to make them a different color? Explain briefly. Th
 the code to make those boxes some shade of blue, of your choosing.**
 
 There are two gray boxes on the screen with a white colored border because it represents the 
-paragraph sections on the page. You can edit this code to make them a different color in the style (CSS) section on line 41 and 42. 
+paragraph sections on the page. You can edit this code to make them a different color in the style (CSS) section on line 46 and 47. 
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the 
 text `O Canada` near the bottom of the page. Briefly explain why you made the edits that 
