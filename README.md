@@ -116,7 +116,7 @@ It represents the HTML file and allows the code to be referenced over the elemen
 )? Explain, briefly (<= 2 sentences).**
 
 This line identified is counting the length of li items using the querySelector method and
-then displaying the information on the page using the HTML code on line 61.
+then displaying the information on the page on line 66.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this 
 page</u>?**
